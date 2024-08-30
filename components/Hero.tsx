@@ -7,7 +7,7 @@ import { BackgroundBeamsWithCollision } from "./ui/BackgroundBeamsWithCollision"
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36 h-screen">
 
       {/**
        *  UI: Spotlights
@@ -30,7 +30,7 @@ const Hero = () => {
        *  change bg color to bg-black-100 and reduce grid color from
        *  0.2 to 0.03
        */}
-       <BackgroundBeamsWithCollision className=" w-full pb-20 h-full absolute top-0 left-0">
+       <BackgroundBeamsWithCollision className=" w-full pb-20 h-screen absolute top-0 left-0">
       <div
         className="h-screen w-full -z-10 dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
