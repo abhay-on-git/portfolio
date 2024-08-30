@@ -4,10 +4,9 @@ import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
+import Lottie from 'react-lottie'
 
 import { cn } from "@/lib/utils";
-
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 import animationData from "@/data/confetti.json";
@@ -53,8 +52,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["ReactJS", "Express", "JavaScript"];
+  const rightLists = ["MongoDB", "Next.Js", "Typescript"];
 
   const [copied, setCopied] = useState(false);
 
@@ -68,7 +67,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "abhayagnihotri1585@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
