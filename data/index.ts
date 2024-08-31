@@ -72,16 +72,16 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+      title: "Gather Links A Browser Extintion",
+      des: "GatherLinks used by 60+ users have already decluttered their online resources.",
       img: "/p1.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
       link: "/ui.earth.com",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+      title: "Color Catcher - A Browser Extintion",
+      des: "Color Catcher trusted by 70+ users for its efficiency and creativity and simplifies color picking and gradient creation from any webpage.",
       img: "/p2.svg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "/ui.yoom.com",
