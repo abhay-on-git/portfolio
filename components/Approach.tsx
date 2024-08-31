@@ -6,8 +6,8 @@ export function Approach() {
   return (
     <div className="h-screen py-12 w-full">
       <h1 className="heading mb-5">
-        How do  
-        <span className="text-purple"> I Approach</span>
+        My 
+        <span className="text-purple"> Approach</span>
       </h1>
       <LayoutGrid cards={cards} />
     </div>
