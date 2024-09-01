@@ -8,7 +8,7 @@ import {
 
 export function Collaboration() {
   return (
-    <div className="flex items-center justify-center h-[40rem] rounded-2xl w-full">
+    <div className="flex items-center justify-center md:h-[40rem] h-[30rem] pt-20 rounded-2xl w-full">
       <TextRevealCard
         text="You know the business"
         revealText="I am open for collaboration."
