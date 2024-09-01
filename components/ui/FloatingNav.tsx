@@ -1,5 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { FaComments, FaEnvelope } from "react-icons/fa";
+
 import {
   motion,
   AnimatePresence,
@@ -8,6 +10,8 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { SiAboutdotme } from "react-icons/si";
+import { GrProjects } from "react-icons/gr";
 
 export const FloatingNav = ({
   navItems,
@@ -23,6 +27,25 @@ export const FloatingNav = ({
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 640) {
+        setIsMobile(true); 
+      } else {
+        setIsMobile(false); 
+      }
+    };
+  
+    handleResize(); // Initial check
+  
+    window.addEventListener("resize", handleResize);
+  
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
@@ -41,8 +64,51 @@ export const FloatingNav = ({
     }
   });
 
-  return (
-    <AnimatePresence mode="wait">
+
+ const icons = [
+  { name: "About", link: "#about", icon: "Me" }, 
+  { name: "Projects", link: "#projects", icon: <GrProjects /> },  
+  { name: "Testimonials", link: "#testimonials", icon: <FaComments /> }, 
+  { name: "Contact", link: "#contact", icon: <FaEnvelope /> }, 
+];
+
+return (
+  <div>
+    {isMobile ? (
+      <AnimatePresence mode="wait">
+      <motion.div
+        initial={{
+          opacity: 1,
+          y: -100,
+        }}
+        animate={{
+          y: visible ? 0 : -100,
+          opacity: visible ? 1 : 0,
+        }}
+        transition={{
+          duration: 0.2,
+        }}
+        className={cn(
+          "flex max-w-fit  fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-lg bg-black-100 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-10 py-5  items-center justify-center space-x-4",
+          className
+        )}
+      >
+        {icons.map((navItem: any, idx: number) => (
+          <Link
+            key={`link=${idx}`}
+            href={navItem.link}
+            className={cn(
+              "relative text-neutral-50 items-center flex space-x-1 hover:text-neutral-300 "
+            )}
+          >
+            <span className="block sm:hidden">{navItem.icon}</span>
+            <span className="hidden sm:block  text-sm">{navItem.name}</span>
+          </Link>
+        ))}
+      </motion.div>
+    </AnimatePresence>
+    ) : (
+      <AnimatePresence mode="wait">
       <motion.div
         initial={{
           opacity: 1,
@@ -74,5 +140,8 @@ export const FloatingNav = ({
         ))}
       </motion.div>
     </AnimatePresence>
-  );
+    )}
+  </div>
+);
+
 };

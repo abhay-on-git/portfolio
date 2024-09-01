@@ -26,6 +26,9 @@ const config = {
       },
     },
     extend: {
+      screens:{
+      'mobile': '640px'
+      },
       colors: {
         black: {
           DEFAULT: "#000",

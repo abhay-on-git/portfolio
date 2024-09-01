@@ -1,10 +1,12 @@
+// data/index.ts
 export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
-  ];
-  
+  { name: "About", link: "#about"},
+  { name: "Projects", link: "#projects" },
+  { name: "Testimonials", link: "#testimonials"},
+  { name: "Contact", link: "#contact" },
+];
+
+
   export const gridItems = [
     {
       id: 1,

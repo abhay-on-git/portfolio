@@ -11,7 +11,7 @@ export function Collaboration() {
     <div className="flex items-center justify-center md:h-[40rem] h-[30rem] pt-20 rounded-2xl w-full">
       <TextRevealCard
         text="You know the business"
-        revealText="I am open for collaboration."
+        revealText="I am open to collaboration."
       >
         <TextRevealCardTitle>
           Sometimes, you just need the Right people.
