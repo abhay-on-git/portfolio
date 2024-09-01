@@ -11,14 +11,13 @@ export function Collaboration() {
     <div className="flex items-center justify-center h-[40rem] rounded-2xl w-full">
       <TextRevealCard
         text="You know the business"
-        revealText="I know the chemistry "
+        revealText="I am open for collaboration."
       >
         <TextRevealCardTitle>
-          Sometimes, you just need to see it.
+          Sometimes, you just need the Right people.
         </TextRevealCardTitle>
         <TextRevealCardDescription>
-          This is a text reveal card. Hover over the card to reveal the hidden
-          text.
+        The Right team and your vision can bring your Biggest Dreams to Life step by step & The Best thing is...
         </TextRevealCardDescription>
       </TextRevealCard>
     </div>

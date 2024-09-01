@@ -67,13 +67,13 @@ export const TextRevealCard = ({
       onTouchMove={touchMoveHandler}
       ref={cardRef}
       className={cn(
-        "bg-[#1d1c20] border border-white/[0.08] md:w-[60rem] w-full rounded-lg p-8 relative overflow-hidden",
+        "bg-black-100  flex items-center justify-center flex-col md:w-[65rem] w-full rounded-lg p-8 relative overflow-hidden",
         className
       )}
     >
       {children}
 
-      <div className="h-40 w-full mx-auto relative flex items-center overflow-hidden">
+      <div className="h-40 w-full mx-auto relative flex items-center justify-center overflow-hidden">
         <motion.div
           style={{
             width: "100%",
@@ -89,13 +89,13 @@ export const TextRevealCard = ({
                 }
           }
           transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
-          className="absolute bg-[#1d1c20] z-20  will-change-transform"
+          className="absolute bg-black-100 z-20  will-change-transform"
         >
           <p
             style={{
               textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
             }}
-            className="text-base sm:text-[3rem] py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300"
+            className="sm:text-[3rem] text-[1.2rem] md:text-[4rem] text-center mx-auto py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300"
           >
             {revealText}
           </p>
@@ -111,7 +111,7 @@ export const TextRevealCard = ({
         ></motion.div>
 
         <div className=" overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,white,transparent)]">
-          <p className="text-base sm:text-[3rem] py-10 font-bold bg-clip-text text-transparent bg-[#323238]">
+          <p className="text-base sm:text-[3rem] text-[1.3rem] md:text-[4rem] py-10 font-bold bg-clip-text text-transparent bg-[#323238]">
             {text}
           </p>
           <MemoizedStars />
@@ -129,7 +129,7 @@ export const TextRevealCardTitle = ({
   className?: string;
 }) => {
   return (
-    <h2 className={twMerge("text-white text-lg mb-2", className)}>
+    <h2 className={twMerge("text-white md:text-lg text-md md:mb-2 mb-5", className)}>
       {children}
     </h2>
   );
