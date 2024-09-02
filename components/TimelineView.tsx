@@ -3,7 +3,7 @@ import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 
 export function TimelineView() {
-  const data = [
+  const   data = [
     {
       title: "May 2024 - Present",
       company: "Sheryians Coding School",
@@ -107,7 +107,7 @@ export function TimelineView() {
     },
     {
       title: "Freelancer",
-      // company: "Sheryians Coding School",
+      company: "",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
