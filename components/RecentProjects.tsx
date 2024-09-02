@@ -1,7 +1,7 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
+import Image from "next/image"; // Use Next.js Image component for better SSR handling
 import { projects } from "@/data";
 import { PinContainer } from "./ui/PinContainer";
 
@@ -14,25 +14,31 @@ const RecentProjects = () => {
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-7 mt-10">
         {projects.map((item) => (
-          <div
-            className="sm:h-[41rem]  lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+          <a
+            href={item.link}
             key={item.id}
+            className="sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
           >
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
-            >
+            <PinContainer title={item?.linkTiitle || "/"}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img  src="/bg.png" alt="bgimg" />
+                  <Image
+                    src="/bg.png"
+                    alt="Background Image"
+                    fill // Use the 'fill' prop to cover the container
+                    objectFit="cover" // Ensure the image covers the container
+                  />
                 </div>
-                <img
+                <Image
                   src={item.img}
-                  alt="cover"
+                  alt={item.title}
                   className="z-10 absolute bottom-0"
+                  width={500} // Provide explicit dimensions to avoid layout shifts
+                  height={300}
+                  objectFit="cover"
                 />
               </div>
 
@@ -60,7 +66,13 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <Image
+                        src={icon}
+                        alt={`Icon ${index + 1}`}
+                        className="p-2"
+                        width={30} // Provide explicit dimensions
+                        height={30}
+                      />
                     </div>
                   ))}
                 </div>
@@ -73,7 +85,7 @@ const RecentProjects = () => {
                 </div>
               </div>
             </PinContainer>
-          </div>
+          </a>
         ))}
       </div>
     </div>

@@ -6,6 +6,7 @@ export function TimelineView() {
   const data = [
     {
       title: "May 2024 - Present",
+      company: "Sheryians Coding School",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
@@ -15,6 +16,9 @@ export function TimelineView() {
             Chrome Extintions that are being used by 100+ users.
           </p>
           <div className="mb-8">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 mb-5 md:mb-2 text-xs md:text-sm">
+              ✅  Worked as a Technical Assistent in the organization. 
+            </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 mb-5 md:mb-2 text-xs md:text-sm">
               ✅  Gather Links streamlines URL saving,management, and sharing for efficient online resource organization.
             </div>
@@ -57,6 +61,7 @@ export function TimelineView() {
     },
     {
       title: "Early 2023",
+      company: "Skin Aura",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -101,7 +106,8 @@ export function TimelineView() {
       ),
     },
     {
-      title: "Changelog",
+      title: "Freelancer",
+      // company: "Sheryians Coding School",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
