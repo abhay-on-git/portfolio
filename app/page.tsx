@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { TimelineView } from "@/components/TimelineView";
 import { FloatingNav } from "@/components/ui/FloatingNav";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { navItems } from "@/data";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
@@ -27,7 +28,6 @@ export default function Home() {
      <Approach/>
      <Collaboration/>
      <Footer/>
-
       </div>
     </main>
   );

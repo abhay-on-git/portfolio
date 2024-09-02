@@ -3,12 +3,14 @@ import React, { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { HoverBorderGradient } from "./hover-border-gradient";
 
 type Card = {
   id: number;
   content: JSX.Element | React.ReactNode | string;
   className: string;
   thumbnail: string;
+  step : string,
 };
 
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
@@ -61,7 +63,9 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
 
 const ImageComponent = ({ card }: { card: Card }) => {
   return (
-    <motion.img
+    <div className="p-3">
+      <HoverBorderGradient children={card.step}/>
+      <motion.img 
       layoutId={`image-${card.id}-image`}
       src={card.thumbnail}
       height="500"
@@ -71,6 +75,7 @@ const ImageComponent = ({ card }: { card: Card }) => {
       )}
       alt="thumbnail"
     />
+    </div>
   );
 };
 
