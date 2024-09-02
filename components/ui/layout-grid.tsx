@@ -64,9 +64,9 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
 const ImageComponent = ({ card }: { card: Card }) => {
   return (
     <div className="p-3">
-      {/* <HoverBorderGradient>
-      {card.step}
-      </HoverBorderGradient> */}
+        {/* <HoverBorderGradient>
+        {card.step}
+        </HoverBorderGradient> */}
       <motion.img 
       layoutId={`image-${card.id}-image`}
       src={card.thumbnail}
