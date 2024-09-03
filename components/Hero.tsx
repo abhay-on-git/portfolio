@@ -4,6 +4,7 @@ import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { BackgroundBeamsWithCollision } from "./ui/BackgroundBeamsWithCollision";
+import { IoMdDownload } from "react-icons/io";
 
 const Hero = () => {
   return (
@@ -64,10 +65,10 @@ const Hero = () => {
             Hi! I&apos;m Abhay, a Creative Developer based in India.
           </p>
 
-          <a href="#projects">
+          <a href="/resume.pdf">
             <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
+              title="Download My Resume"
+              icon={<IoMdDownload />}
               position="right"
             />
           </a>
