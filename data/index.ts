@@ -77,8 +77,8 @@ export const navItems = [
       title: "RealStick",
       linkTiitle:"RealStick",
       des: "A fullstack e-commerce platform using the MERN stack, with proper authentication ,database management and nodemailer for automated order confirmations.",
-      img: "",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+      img: "/realstick.poster.png",
+      iconLists: ["/re.svg", "/tail.svg", "/js.logo.webp", "/express-js.webp", "/mongodb.webp","/nodejs.webp","/jwt.webp","/mui.webp"],
       link: "https://realstick.vercel.app/",
     },
     {
@@ -86,8 +86,8 @@ export const navItems = [
       title: "BeSocial",
       linkTiitle:"BeSocial",
       des: "A dedicated social media platform for social activists to spread awareness and inspire people.",
-      img: "",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      img: "/beSocial-poster.png",
+      iconLists: ["/re.svg", "/tail.svg", "/js-logo.webp", "/gsap.svg"],
       link: "https://besocial-ztkc.onrender.com/",
     },
     {
@@ -95,8 +95,8 @@ export const navItems = [
       title: "MOQO",
       linkTiitle:"moqo.be",
       des: "Awwwards-Winning Design! 🏆 A Fully Responsive Frontend Project Which Represents The Morden Web Design. ",
-      img: "",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      img: "/moqo-poster.png",
+      iconLists: ["/html.webp", "/css.webp", "/js.logo.webp", "/gsap.svg"],
       link: "https://abhay-on-git.github.io/MOQO-Clone/MOQO-CLONE/",
     },
     {
@@ -104,8 +104,8 @@ export const navItems = [
       title: "ReyBan",
       linkTiitle:"reyban",
       des: "3D Magic in Modern Web Design! ✨ Experience the frontend that mesmerizes users. 😍",
-      img: "",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+      img: "/reyban-poster.png",
+      iconLists: ["/re.svg", "/three.svg", "/js.logo.webp","/fm.svg"],
       link: "https://abhay-on-git.github.io/Rey-Ban-LandingPage/ReyBan-LandingPage/",
     },
   ];

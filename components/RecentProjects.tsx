@@ -35,10 +35,8 @@ const RecentProjects = () => {
                 <Image
                   src={item.img}
                   alt={item.title}
-                  className="z-10 absolute bottom-0"
-                  width={500} // Provide explicit dimensions to avoid layout shifts
-                  height={300}
-                  objectFit="cover"
+                  className="poster absolute object-cover"
+                  fill
                 />
               </div>
 
