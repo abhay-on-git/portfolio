@@ -8,7 +8,7 @@ import { IoMdDownload } from "react-icons/io";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 h-screen">
+    <div className="pb-20 pt-36 h-screen ">
 
       {/**
        *  UI: Spotlights
