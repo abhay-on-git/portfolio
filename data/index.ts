@@ -1,3 +1,5 @@
+import { profile } from "console";
+
 // data/index.ts
 export const navItems = [
   { name: "About", link: "#about"},
@@ -51,8 +53,8 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building an Full-Stack E-Commerce",
-      description: "The Inside Scoop",
+      title: "Currently working on the React Native.",
+      description: "The StackMentalist",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -87,7 +89,7 @@ export const navItems = [
       linkTiitle:"BeSocial",
       des: "A dedicated social media platform for social activists to spread awareness and inspire people.",
       img: "/beSocial-poster.png",
-      iconLists: ["/re.svg", "/tail.svg", "/js-logo.webp", "/gsap.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "/js.logo.webp", "/gsap.svg"],
       link: "https://besocial-ztkc.onrender.com/",
     },
     {
@@ -101,45 +103,61 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "ReyBan",
-      linkTiitle:"reyban",
-      des: "3D Magic in Modern Web Design! ✨ Experience the frontend that mesmerizes users. 😍",
-      img: "/reyban-poster.png",
-      iconLists: ["/re.svg", "/three.svg", "/js.logo.webp","/fm.svg"],
-      link: "https://abhay-on-git.github.io/Rey-Ban-LandingPage/ReyBan-LandingPage/",
+      title: "AritstWeb",
+      linkTiitle:"artistweb",
+      des: "A sleek UI built with React and Framer, offering a premium experience that makes users proud to belong to the brand.",
+      img: "/artistweb-poster.png",
+      iconLists: ["/re.svg","/tail.svg", "/js.logo.webp","/fm.svg"],
+      link: "https://artistweb.netlify.app/",
+    },
+    {
+      id: 5,
+      title: "Liquid Death",
+      linkTiitle:"liquiddeath",
+      des: "Re-Designed a very famous American Drink brand in my flavour and make it alive.✌️ ( only for web view ! )",
+      img: "/liquiddeath-poster.png",
+      iconLists: ["/html.webp", "/css.webp", "/js.logo.webp", "/gsap.svg"],
+      link: "https://liquiddeath.netlify.app/",
+    },
+    {
+      id: 6,
+      title: "Ochi",
+      linkTiitle:"ochi",
+      des: "Just watching the user's interaction with my virtual eyes.😃 ( only for web view ! )",
+      img: "/ochi-poster.png",
+      iconLists: ["/js.logo.webp", "/gsap.svg","/re.svg","/tail.svg","/fm.svg"],
+      link: "https://ochi-io.netlify.app/",
     },
   ];
   
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Working with Abhay has been a great experience. I closely observed, he brings clarity, creativity, and a user-first approach to every project, making his designs both functional and impactful. As a mentor, he simplifies complex concepts and inspires passion for coding in our students. Abhay consistently delivers value, innovation, and excellence—truly a transformative professional.",
+      name: "Dhanesh Malviya",
+      profile: "/dhaneshMalviya.png",
+      title: "Co-Founder at Sheryians Coding School",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Working with Abhay on the web project has been a fantastic experience. His front-end skills are top-notch, and his ability to collaborate seamlessly with the backend team made the entire development process smooth. Abhay is not only skilled but also a great problem-solver, always bringing innovative solutions to the table. His professionalism and dedication to the project were invaluable. It was a pleasure working with him, and I look forward to future collaborations.",
+      name: "Abhishek Vishwakarma",
+      profile: "/abhishekVishwkarma.png",
+      title: "Fullstack Developer at Gestureminds",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Abhay is a dedicated and highly driven individual. During our time working together, he consistently showed a deep understanding of coding and design principles. His ability to break down complex topics and apply them practically was impressive. He approaches challenges with creativity and determination, always striving for excellence. It’s been a pleasure mentoring him, and I’m confident he will continue to excel in whatever he pursues.",
+      name: "Sarthak Sharma",
+      profile: "/sarthaksharma.png",
+      title: "Instructor at Sheryians Coding School",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Abhay is a Great Designer. He perfectly captured the essence of our brand, Skin Aura, through a stunning logo and professional visiting card design. His attention to detail and ability to align with our vision were impressive. The designs not only stand out but also resonate with our values as a healthcare company. It was a pleasure working with Abhay, and I highly recommend him for any design needs.",
+      name: "Dr. Sahid Ali",
+      profile: "/skinaura.png",
+      title: "CEO at SkinAura",
     },
   ];
   

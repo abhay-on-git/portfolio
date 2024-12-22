@@ -14,7 +14,7 @@ export function Collaboration() {
         revealText="I am open to collaboration."
       >
         <TextRevealCardTitle>
-          Sometimes, you just need the Right people.
+          Sometimes, you just need the Right Person in Your Team .
         </TextRevealCardTitle>
         <TextRevealCardDescription>
         The Right team and your vision can bring your Biggest Dreams to Life step by step & The Best thing is...

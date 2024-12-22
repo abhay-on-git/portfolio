@@ -43,7 +43,7 @@ export const Timeline = ({ data } : { data: TimelineEntry[] }) => {
         My Journey as a Fullstack <br/> Developer...
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-md">
-        In the past year, Ive gained hands-on experience in Design & Development. Heres a timeline of my journey.
+        Experience - 1.5 years
         </p>
       </div>
 

@@ -5,7 +5,49 @@ import { Timeline } from "@/components/ui/timeline";
 export function TimelineView() {
   const data = [
     {
-      title: "May 2024 - Present",
+      title: "October 2024 - Present",
+      company: "The StackMentalist",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+            Worked as an Fullstack Intern in the organisation.
+          </p>
+          <div className="mb-8">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 mb-5 md:mb-2 text-xs md:text-sm">
+              ✅ Worked on a React Native app with logic integration for IoT device compatibility
+            </div>
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 mb-5 md:mb-2 text-xs md:text-sm">
+              ✅ Designed, developed, and optimized the organization's website for an enhanced user experience.
+            </div>
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+              ✅ Created mockups for various client projects within the organization.
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <a href="https://stackmentalist.com/en">
+              <Image
+                src="/tsmLogo.jpg"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </a>
+            {/* <a href="https://chromewebstore.google.com/detail/gatherlinks/gkmnhednlbfalbmeijbmjlaicleeiimb">
+              <Image
+                src="/gatherLinks-poster.png"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </a> */}
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "April 2024 - September 2024",
       company: "Sheryians Coding School",
       content: (
         <div>
@@ -52,12 +94,12 @@ export function TimelineView() {
       ),
     },
     {
-      title: "April 2024 - Present",
+      title: "Feb 2024 - April 2024",
       company: "Skin Aura",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 font-semibold text-xs md:text-sm mb-6">
-            Designed and Developed the Frontend UI of the Skin Aura.
+            Designed and Developed the UI of the Skin Aura.
           </p>
 
           <div className="mb-8">
@@ -73,7 +115,7 @@ export function TimelineView() {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <a href="">
+            <a href="https://www.skinaura.health/">
               <Image
                 src="/SA-logo.png"
                 alt="Going to be Live Soon...."
@@ -96,7 +138,7 @@ export function TimelineView() {
       ),
     },
     {
-      title: "November 2023 - April 2024 ",
+      title: "November 2023 - Present ",
       company: "Graphic Designer",
       content: (
         <div>
