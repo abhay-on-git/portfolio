@@ -17,7 +17,7 @@ export function TimelineView() {
               ✅ Worked on a React Native app with logic integration for IoT device compatibility
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 mb-5 md:mb-2 text-xs md:text-sm">
-              ✅ Designed, developed, and optimized the organization's website for an enhanced user experience.
+              ✅ Designed, developed, and optimized the organization&apos;s website for an enhanced user experience.
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
               ✅ Created mockups for various client projects within the organization.
