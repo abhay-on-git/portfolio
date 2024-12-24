@@ -143,7 +143,7 @@ export const navItems = [
         "Working with Abhay on the web project has been a fantastic experience. His front-end skills are top-notch, and his ability to collaborate seamlessly with the backend team made the entire development process smooth. Abhay is not only skilled but also a great problem-solver, always bringing innovative solutions to the table. His professionalism and dedication to the project were invaluable. It was a pleasure working with him, and I look forward to future collaborations.",
       name: "Abhishek Vishwakarma",
       profile: "/abhishekVishwkarma.png",
-      title: "Fullstack Developer at Gestureminds",
+      title: "Backend Developer at Gestureminds",
     },
     {
       quote:
