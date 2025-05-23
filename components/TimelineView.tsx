@@ -4,23 +4,32 @@ import { Timeline } from "@/components/ui/timeline";
 
 export function TimelineView() {
   const data = [
+  
     {
-      title: "October 2024 - Present",
+      title: "September 2024 - Present",
       company: "The StackMentalist",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Worked as an Fullstack Intern in the organisation.
+            Working as an Associate Software Engineer.
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 mb-5 md:mb-2 text-xs md:text-sm">
-              ✅ Worked on a React Native app with logic integration for IoT device compatibility
+              ✅ Led UX and frontend for OdRescue with React & FastAPI, powered
+              Agile sprints via Azure DevOps, and bridged client, team, and
+              backend to ship features fast and smooth.
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 mb-5 md:mb-2 text-xs md:text-sm">
-              ✅ Designed, developed, and optimized the organization&apos;s website for an enhanced user experience.
+              ✅ Built a feature in a React Native app with smart logic to
+              seamlessly connect and control IoT devices in real time.
+            </div>
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 mb-5 md:mb-2 text-xs md:text-sm">
+              ✅ Designed, developed, and optimized the organization&apos;s
+              website for an enhanced user experience.
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Created mockups for various client projects within the organization.
+              ✅ Created mockups for various client projects within the
+              organization.
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -138,7 +147,7 @@ export function TimelineView() {
       ),
     },
     {
-      title: "November 2023 - Present ",
+      title: "November 2023 - April 2024 ",
       company: "Graphic Designer",
       content: (
         <div>
@@ -154,10 +163,12 @@ export function TimelineView() {
               & Photoshop.
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Click the link to see my work
-              🔗<a href="https://drive.google.com/drive/folders/1E_q1jb_DoY0Ao94nkkfj556ClLr7gcR3?usp=drive_link" className="underline text-blue-500 hover:text-blue-700">
-                <span role="img" aria-label="link">
-                </span>
+              ✅ Click the link to see my work 🔗
+              <a
+                href="https://drive.google.com/drive/folders/1E_q1jb_DoY0Ao94nkkfj556ClLr7gcR3?usp=drive_link"
+                className="underline text-blue-500 hover:text-blue-700"
+              >
+                <span role="img" aria-label="link"></span>
                 Link
               </a>
             </div>

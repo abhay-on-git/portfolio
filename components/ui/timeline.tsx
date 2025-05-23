@@ -6,6 +6,7 @@ import {
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+import DynamicExperienceCounter from "./DynamicExperienceCounter";
 
 interface TimelineEntry {
   title: string;
@@ -42,9 +43,10 @@ export const Timeline = ({ data } : { data: TimelineEntry[] }) => {
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
         My Journey as a Fullstack <br/> Developer...
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-md">
-        Experience - 1.5 years
-        </p>
+        {/* <p className="text-neutral-700 dark:text-neutral-300 font-semibold md:mt-10 text-sm md:text-base max-w-md">
+        Experience - 2 years
+        </p> */}
+          <DynamicExperienceCounter/>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

@@ -7,7 +7,10 @@ import { BackgroundBeamsWithCollision } from "./ui/BackgroundBeamsWithCollision"
 const Footer = () => {
   return (
     <BackgroundBeamsWithCollision className="w-full md:h-96 h-100 relative">
-      <footer className="w-full md:pt-20 py-20 bg-black-100 relative -z-10" id="contact">
+      <footer
+        className="w-full md:pt-20 py-20 bg-black-100 relative -z-10"
+        id="contact"
+      >
         {/* background grid */}
         <div className="w-full absolute left-0 md:-bottom-72 min-h-96 z-0">
           <img
@@ -19,10 +22,12 @@ const Footer = () => {
 
         <div className="flex flex-col items-center z-20 relative">
           <h1 className="heading lg:max-w-[45vw] text-white">
-            Looking to elevate <span className="text-purple">your</span> digital presence?
+            Looking to elevate <span className="text-purple">your</span> digital
+            presence?
           </h1>
           <p className="text-white-200 md:mt-10 my-4 text-center">
-            Let’s connect and talk about how I can support you in reaching your goals.
+            Let’s connect and talk about how I can support you in reaching your
+            goals.
           </p>
           <a href="mailto:abhayagnihotri1585@gmail.com" className="z-30">
             <MagicButton
@@ -35,7 +40,7 @@ const Footer = () => {
 
         <div className="flex mt-12 md:flex-row flex-col justify-between items-center z-20 relative">
           <p className="md:text-base text-sm md:font-normal md:mb-0 mb-10 font-light text-white">
-            Copyright © 2024 Abhay Agnihotri
+            Copyright © {new Date().getFullYear()} Abhay Agnihotri
           </p>
 
           <div className="flex items-center md:gap-3 gap-6 z-30">
