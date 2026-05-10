@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/heightall');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -86,4 +88,18 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+}
+
+@keyframes marquee-scroll {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  transform: translateZ(0);          /* promote to GPU layer immediately */
+  backface-visibility: hidden;       /* prevent sub-pixel flicker */
+  animation: marquee-scroll 40s linear infinite;
 }
